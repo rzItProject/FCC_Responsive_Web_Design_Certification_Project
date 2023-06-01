@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">General Film Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+
+    <form action="" id="survey-form">
+        <div class="form-container">
+            <label for="name" id="name-label"> Name* </label>
+            <input type="text" id="name" placeholder="Enter your name" value="" required>
+            <label for="email" id="email-label"> Email* </label>
+            <input type="email" name="" id="email" placeholder="Enter your email" value="" required>
+            <label for="number" id="number-label"> Age </label>
+            <input type="number" name="age" id="number" value="" placeholder="Age" min="13" max="100" />
+        </div>
+        <div class="form-container">
+            <p>What gender are you?</p>
+            <label for="male">
+                <input type="radio" name="gender" id="male" value="male" class="inline"> Male
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" id="female" value="female" class="inline"> Female
+            </label>
+            <label for="nonbinary">
+                <input type="radio" name="gender" id="nonbinary" value="nonbinary" class="inline"> Non-Binary
+            </label>
+            <label for="other">
+                <input type="radio" name="gender" id="other" value="other" class="inline"> Prefer not to say
+            </label>
+        </div>
+        <div class="form-container">
+            <p>How often do you go to the cinema?*</p>
+            <select name="" id="dropdown" required>
+                <option value="0">Never</option>
+                <option value="1">Once a year</option>
+                <option value="2">Once a month</option>
+                <option value="3">2-5 times a month</option>
+                <option value="4">Other</option>
+            </select>
+        </div>
+        <div class="form-container">
+            <p>What is/are you favorite film genre? (select at least two options)</p>
+            <label for="action">
+                <input type="checkbox" name="" id="action" value="action" class="inline"> Action
+            </label>
+            <label for="adventure">
+                <input type="checkbox" name="" id="adventure" value="adventure" class="inline"> Adventure
+            </label>
+            <label for="comedy">
+                <input type="checkbox" name="" id="comedy" value="comedy" class="inline"> Comedy
+            </label>
+            <label for="crime">
+                <input type="checkbox" name="" id="crime" value="crime" class="inline"> Crime
+            </label>
+            <label for="documentary">
+                <input type="checkbox" name="" id="documentary" value="documentary" class="inline"> Documentary
+            </label>
+            <label for="drama">
+                <input type="checkbox" name="" id="drama" value="drama" class="inline"> Drama
+            </label>
+            <label for="historical">
+                <input type="checkbox" name="" id="historical" value="historical" class="inline"> Historical
+            </label>
+            <label for="horror">
+                <input type="checkbox" name="" id="horror" value="horror" class="inline"> Horror
+            </label>
+            <label for="musicals">
+                <input type="checkbox" name="" id="musicals" value="musicals" class="inline"> Musicals
+            </label>
+            <label for="scifi">
+                <input type="checkbox" name="" id="scifi" value="scifi" class="inline"> Sci-Fi
+            </label>
+            <label for="romance">
+                <input type="checkbox" name="" id="romance" value="romance" class="inline"> Romance
+            </label>
+            <label for="war">
+                <input type="checkbox" name="" id="war" value="war" class="inline"> War
+            </label>
+        </div>
+        <div class="form-container">
+            <p>What film have you seen this year?</p>
+            <textarea name="" id="" cols="30" rows="3"></textarea>
+        </div>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+
+</html>
