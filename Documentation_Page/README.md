@@ -1,0 +1,7 @@
+# HTML/CSS PROJECT -  DOCUMENTATION PAGE 
+
+## ANGULAR JS CHEAT SHEET SAMPLE
+
+## OUTPUT
+
+![gif record](doc_page.gif)

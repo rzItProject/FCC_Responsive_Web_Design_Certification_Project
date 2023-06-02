@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>AngularJS CHEAT SHEET</header>
+        <ul>
+            <li><a href="#Angular_Setup" class="nav-link">Angular Setup</a></li>
+            <li><a href="#Create_Application" class="nav-link">Create Application</a></li>
+            <li><a href="#Lint_for_Formatting" class="nav-link">Lint for Formatting</a></li>
+            <li><a href="#Blueprints" class="nav-link">Blueprints</a></li>
+            <li><a href="#Building_Serving" class="nav-link">Building Serving</a></li>
+            <li><a href="#Component_Life_Cycles" class="nav-link">Component Life Cycles</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section></section>
+        <section class="main-section" id="Angular_Setup">
+            <header>Angular setup</header>
+            <p><strong>Prerequisite:</strong> Installation of the node.js & npm</p>
+            <p>You can use the Angular CLI to create projects, generate application and library code, and perform a
+                variety of ongoing development tasks such as testing, bundling, and deployment.</p>
+            <p>To install the Angular CLI, open a terminal window and run the following command:</p>
+            <code>npm install -g @angular/cli</code>
+            <p>For checking the version of the node.js & angular CLI installed, type the below command in the cmd:</p>
+            <code>node -v
+                ng -v or ng --version</code>
+            <p>Now, we will create the Angular application using the Angular CLI, as given below:</p>
+            <code>ng new Project-Name</code>
+            <p>Run the application: Navigate the folder where the project has been created & type the below command to
+                run the app:</p>
+            <code>cd Project-Name
+                    ng serve --open
+                </code>
+        </section>
+        <section class="main-section" id="Create_Application">
+            <header>Create Application</header>
+            <p>The following command sets the prefix to “best:”</p>
+            <code>ng new best-practises --prefix best</code>
+            <p>This command checks the available command list.</p>
+            <code>ng new --help</code>
+            <p>This command simulates the “ng new” command:</p>
+            <code>ng new best-practises --dry-run</code>
+        </section>
+        <section class="main-section" id="Lint_for_Formatting">
+            <header>Lint for Formatting</header>
+            <p>The Lint command fixes code smells and corrects improper formatting.</p>
+            <code>ng lint my-app --fix</code>
+            <p>This next command shows warnings:</p>
+            <code>ng lint my-app</code>
+            <p>If you want to format the code, you can use the following command. </p>
+            <code>ng lint my-app --format stylish</code>
+            <p>Next, this command verifies the accessible list of commands.</p>
+            <code>ng lint my-app --help</code>
+        </section>
+        <section class="main-section" id="Blueprints">
+            <header>Blueprints</header>
+            <p>Generate spec:</p>
+            <code>--spec</code>
+            <p>Check whether the template will be a.ts file or not:</p>
+            <code>--inline-template (-t)</code>
+            <p>Check whether the style will be in the.ts file or not:</p>
+            <code>--inline-style (-s)</code>
+            <p>Create a directive:</p>
+            <code>ng g d directive-name</code>
+            <p>Create a pipeline:</p>
+            <code>ng g p init-caps</code>
+            <p>Create customer class in the models folder:</p>
+            <code>ng g cl models/customer</code>
+            <p>Creates a component without the need for the creation of a new folder.</p>
+            <code>ng g c my-component --flat true</code>
+            <p>Assign a prefix:</p>
+            <code>--prefix</code>
+            <p>Create an interface in the models folder:</p>
+            <code>ng g i models/person</code>
+            <p>Create an ENUM gender in the models folder:</p>
+            <code>ng g e models/gender</code>
+            <p>Create a service:</p>
+            <code>ng g s service-name</code>
+        </section>
+        <section class="main-section" id="Building_Serving">
+            <header>Building Serving</header>
+            <p>Build an app to /dist folder:</p>
+            <code>ng build</code>
+            <p>Optimize and build an app without using unnecessary code:</p>
+            <code>ng build --aot</code>
+            <p>Create a build for production:</p>
+            <code>ng build --prod</code>
+            <p>Specify serve with opening a browser:</p>
+            <code>ng serve -o</code>
+            <p>Reload when changes occur:</p>
+            <code>ng serve --live-reload</code>
+            <p>Serve using SSL:</p>
+            <code>ng serve -ssl</code>
+        </section>
+        <section class="main-section" id="Component_Life_Cycles">
+            <header>Component Life Cycles</header>
+            <ul>
+                <li>ngOnInit - Called once, after the first ngOnChanges()</li>
+                <li>ngOnChanges - Called before ngOnInit() and whenever one of the input properties changes.</li>
+                <li>ngOnDestroy - Called just before Angular destroys the directive/component.</li>
+                <li>ngDoCheck - Called during every change detection run.</li>
+                <li>ngAfterContentChecked - Called after the ngAfterContentInit() and every subsequent ngDoCheck()</li>
+                <li>ngAfterViewChecked - Called after the ngAfterViewInit() and every subsequent
+                    ngAfterContentChecked().</li>
+                <li>ngAfterContentInit - Called once after the first ngDoCheck().</li>
+                <li>ngAfterViewInit - Called once after the first ngAfterContentChecked().</li>
+            </ul>
+        </section>
+
+    </main>
+</body>
+
+</html>
